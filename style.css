@@ -1,14 +1,14 @@
 html {
   height: 100%;
-  color: #003366;
+  color: #283739;
 }
 body {
-  background-color: #669900;
+  background-color: #2c5d63;
   margin: 0;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  color: blue;
+  color: #a2c11c;
 }
 #content {
   flex: 1;
@@ -23,34 +23,31 @@ body {
 }
 
 #motto {
-  text-align: right;
+  text-align: center;
 }
 
 #motto span {
   font-weight: bold;
 }
-
 #top-menu-bar {
-  text-align: center;
-  background-color: #334455;
+  background-color: #333;
   color: #fff;
-}
-#top-menu-bar li {
-  display: inline;
-  margin: 10px;
-  padding: 10px;
+  text-align: center;
 }
 #top-menu-bar a {
+  text-align: center;
+  display: inline;
+  margin: 2;
   text-decoration: none;
   padding: 0 15px 0 15px;
-  color: black;
+  color: #fff;
 }
 #top-menu-bar a:visited {
-  color: white;
+  color: black;
 }
-#top-menu-bar a:hover {
-  color: yellow;
-  background: black;
+.top-menu-bar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 .page {
   border-radius: 0.5rem;
@@ -63,8 +60,8 @@ body {
   margin-top: 0;
 }
 .page2 {
-  background: yellow;
-  borde-radius: 0.3rem;
+  background: #e0e0e0;
+  border-radius: 0.3rem;
   margin-bottom: 0.7rem;
   padding: 0.5rem;
   box-shadow: 0 1px 4px rgba(151, 127, 200, 0.09);
@@ -80,8 +77,8 @@ body {
   width: 200px;
 }
 .my-job {
-  text-align: centre;
+  text-align: center;
 }
 .footer {
-  text-align: centre;
+  text-align: center;
 }
