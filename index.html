@@ -1,114 +1,131 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mihai's second try</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-      <body>
-        
-        <header>
-          <div>
-          <div class=page2>
-            
-    
-            <h1>Mihai Semenescu</h1>
-          </div>
-           <div id="my-job">
-            <p id="motto" style="color: orange;" > <span>Elev</span> clasa 12</p>
-          </div>
-          </div>
-          <div class="top-menu-bar">
-              <a href="Home">Home</a>
-              <a href="Projects">Projects</a>
-              <a href="Passions">Passions</a>
-              <a href="Skills">Skills</a>
-              <a href="Languages">Languages</a>
-              <a href="Achievements">Achievements</a>
-          </div>
-        </header>
-        <section id= "content">
-            <div id="side-menu">
-                 <section>
-                    <form action="" method="get">
-                        <input type="text" name="email" id="userEmail">
-                        <label for="userEmail">Email</label>
-                        <button type="submit">Contact me</button>
-                    </form>
-                 </section>
-                 <section>
-                  <div class="page3">
-                       <h2>m2
-                      </h2>
-                       </div> 
-                       
-                 </section>
-            </div>
-            <div id="main">
-                <div class="page">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>js</li>
-                    </ul>
-                </div>
-                
-                <div class="page">
-                    <h2>Known Languages
-                    </h2>
-                    
-                    <table border="3">
-                        <tr>
-                        <td>Limba Romana</td>
-                        <td>Nativ</td>
-                            </tr>
-                            <tr>
-                        <td>Limba Italiana</td>
-                        <td>Avansat</td>
-                            </tr>
-                            <tr>
-                                <td>Limba Engleza</td>
-                                <td> Avansat</td>
-                        </tr>
-                    </table>
-                
-                </div>
-                  <div class="page">
-                  <h2>Passions</h2>
-                    <ul>
-                      <li>Art</li>
-                      <li>Cooking</li>
-                      <li>Swimming</li>
-                      <li>Playing with my dog</li>   
-                    </ul>
-                     <img src="https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZWRpZ2lhbmltYWx3b3JsZC5y/Y3MtcmRzLnJvJTJGc3RvcmFnZSUyRjIw/MTklMkYwNCUyRjI1JTJGMTA2NzYyMl8x/MDY3NjIyX3B1aS1kZS1jYWluZS1MYWJy/YWRvci1SZXRyaWV2ZXIuanBnJnc9Nzgw/Jmg9NjAwJnpjPTEmaGFzaD0wOTYxODE0/MThiYmIwODEwMTFkYWYzZmRkYmQ4MmMyMA==.thumb.jpg" alt="" width="250">
-            <img src="imagini/R.jpg" width="50" alt="">
-                    <p>This is not my dog,but still a cute dog</p>
-              </div>
-                        <div class="page">
-                  <h2>Achievements</h2>
-                <ul>
-                  <li>Won many games at water polo</li>
-                  <li>Made a movie in italian</li>
-                  <li>Went to the history competition</li>
-                  </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mihai's second try</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="page2">
+          <h1>Mihai Semenescu</h1>
+        </div>
+        <div id="my-job">
+          <p id="motto" style="color: orange"><span>Elev</span> clasa 12</p>
+        </div>
+      </div>
+      <div class="top-menu-bar">
+        <ul>
+          <li>
+            <a href="#" onclick="showHomePage()">Home</a>
+          </li>
+          <li>
+            <a href="#" onclick="showProjectsPage()">Projects</a>
+          </li>
+          <li>
+            <a href="#" onclick="showPassionsPage()">Passions</a>
+          </li>
+          <li>
+            <a href="#" onclick="showSkillsPage()">Skills</a>
+          </li>
+          <li>
+            <a href="#" onclick="showLanguagesPage()">Languages</a>
+          </li>
+          <li>
+            <a href="#" onclick="showAchievementsPage()">Achievements</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="" method="get">
+            <input type="text" name="email" id="userEmail" />
+            <label for="userEmail">Email</label>
+            <button type="submit">Contact me</button>
+          </form>
         </section>
-        
-         <footer><p>2022</p>
-           
-            <a href="https://github.com/nmatei/"></a>
-            
-            <p style="position: center;">
-                <a href="https://github.com/nmatei/"></a>
-            </p>
-            
-            </footer>
-    
-    
-    
-    
-    </body>
-    </html>
+        <section>
+          <div class="page3">
+            <h2>m2</h2>
+          </div>
+        </section>
+      </div>
+      <div id="main">
+        <div id="home" class="page">
+          <h2>home</h2>
+          <p>This is the home for the CV</p>
+        </div>
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+          <p>This is where i will talk about future projects</p>
+        </div>
+        <div id="skills" class="page">
+          <h2>Skills</h2>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+          </ul>
+        </div>
+
+        <div id="languages" class="page">
+          <h2>Known Languages</h2>
+
+          <table border="3">
+            <tr>
+              <td>Limba Romana</td>
+              <td>Nativ</td>
+            </tr>
+            <tr>
+              <td>Limba Italiana</td>
+              <td>Avansat</td>
+            </tr>
+            <tr>
+              <td>Limba Engleza</td>
+              <td>Avansat</td>
+            </tr>
+          </table>
+        </div>
+        <div id="passions" class="page">
+          <h2>Passions</h2>
+          <ul>
+            <li>Art</li>
+            <li>Cooking</li>
+            <li>Swimming</li>
+            <li>Playing with my dog</li>
+          </ul>
+          <img
+            src="https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZWRpZ2lhbmltYWx3b3JsZC5y/Y3MtcmRzLnJvJTJGc3RvcmFnZSUyRjIw/MTklMkYwNCUyRjI1JTJGMTA2NzYyMl8x/MDY3NjIyX3B1aS1kZS1jYWluZS1MYWJy/YWRvci1SZXRyaWV2ZXIuanBnJnc9Nzgw/Jmg9NjAwJnpjPTEmaGFzaD0wOTYxODE0/MThiYmIwODEwMTFkYWYzZmRkYmQ4MmMyMA==.thumb.jpg"
+            alt=""
+            width="250"
+          />
+
+          <p>This is not my dog,but still a cute dog</p>
+        </div>
+        <div id="achievements" class="page">
+          <h2>Achievements</h2>
+          <ul>
+            <li>Won many games at water polo</li>
+            <li>Made a movie in italian</li>
+            <li>Went to the history competition</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>2022</p>
+
+      <a href="https://github.com/nmatei/"></a>
+
+      <p style="position: center">
+        <a href="https://github.com/nmatei/"></a>
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

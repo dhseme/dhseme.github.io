@@ -34,7 +34,17 @@ body {
   color: #fff;
   text-align: center;
 }
-#top-menu-bar a {
+
+.top-menu-bar ul li {
+  float: center;
+  height: 40px;
+}
+.top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.top-menu-bar a {
   text-align: center;
   display: inline;
   margin: 2;
@@ -42,7 +52,7 @@ body {
   padding: 0 15px 0 15px;
   color: #fff;
 }
-#top-menu-bar a:visited {
+.top-menu-bar a:visited {
   color: black;
 }
 .top-menu-bar a:hover {
@@ -50,6 +60,7 @@ body {
   color: black;
 }
 .page {
+  display: none;
   border-radius: 0.5rem;
   margin-bottom: 1.6rem;
   padding: 1.6rem;
