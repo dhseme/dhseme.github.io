@@ -29,8 +29,8 @@ body {
 #motto span {
   font-weight: bold;
 }
-#top-menu-bar {
-  background-color: #333;
+.top-menu-bar {
+  background-color: greenyellow;
   color: #fff;
   text-align: center;
 }
