@@ -38,6 +38,7 @@ body {
 .top-menu-bar ul li {
   float: center;
   height: 50px;
+  text-decoration: none;
 }
 .top-menu-bar li {
   display: inline;
