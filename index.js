@@ -1,8 +1,3 @@
-console.info(2);
-console.debug(2 + 2);
-console.warn(6 * 3 - 10);
-console.error("started");
-
 var age = 18;
 var myName = "Mihai";
 
