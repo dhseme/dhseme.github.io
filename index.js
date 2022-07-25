@@ -15,7 +15,6 @@ console.info(mottoElement);
 console.warn(mottoElement.innerHTML);
 
 mottoElement.innerHTML = mottoElement.innerHTML + " and " + jobTitle;
-//mottoElement.innerHTML += " and " + jobTitle;
 
 function hide(id) {
   document.getElementById(id).style.display = "none";
@@ -32,9 +31,15 @@ function hideAllPages() {
   hide("achievements");
   hide("languages");
 }
+var activePage = "home";
+
 function showPage(id) {
   hideAllPages();
   show(id);
+  console.warn("previewpage", activePage);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
 
-showPage("home");
+showPage(activePage);
