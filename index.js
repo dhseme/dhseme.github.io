@@ -17,56 +17,24 @@ console.warn(mottoElement.innerHTML);
 mottoElement.innerHTML = mottoElement.innerHTML + " and " + jobTitle;
 //mottoElement.innerHTML += " and " + jobTitle;
 
-function showHomePage() {
-  console.info("aib");
-  document.getElementById("home").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("passions").style.display = "none";
-  document.getElementById("achievements").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+function show(id) {
+  document.getElementById(id).style.display = "block";
 }
 
-function showSkillsPage() {
-  console.debug("show skills");
-  document.getElementById("skills").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-  document.getElementById("passions").style.display = "none";
-  document.getElementById("achievements").style.display = "none";
-  document.getElementById("home").style.display = "none";
+function hideAllPages() {
+  hide("home");
+  hide("skills");
+  hide("projects");
+  hide("passions");
+  hide("achievements");
+  hide("languages");
 }
-function showProjectsPage() {
-  document.getElementById("projects").style.display = "block";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("passions").style.display = "none";
-  document.getElementById("achievements").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-}
-function showLanguagesPage() {
-  document.getElementById("languages").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("passions").style.display = "none";
-  document.getElementById("achievements").style.display = "none";
+function showPage(id) {
+  hideAllPages();
+  show(id);
 }
 
-function showAchievementsPage() {
-  document.getElementById("achievements").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("passions").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-}
-function showPassionsPage() {
-  document.getElementById("passions").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("achievements").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-}
-showHomePage();
+showPage("home");
