@@ -61,7 +61,7 @@ body {
   color: black;
 }
 .top-menu-bar a.active {
-  background-color: #ff0;
+  background-color: darkcyan;
   color: black;
 }
 .page {

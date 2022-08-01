@@ -29,8 +29,10 @@ function showPage(nextPage) {
   console.warn("change", activePage, "to", nextPage);
   hide(activePage);
   show(nextPage);
-  document.getElementById("menu-" + activePage).classList.remove("active");
-  document.getElementById("menu-" + nextPage).classList.add("active");
+  document
+    .querySelector(`a[data-page=${activePage}]`)
+    .classList.remove("active");
+  document.querySelector(`a[data-page=${nextPage}]`).classList.add("active");
   activePage = nextPage;
 }
 
@@ -39,7 +41,7 @@ function intiEvents() {
     .getElementById("top-menu-bar")
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
-        var id = e.target.id.substring(5);
+        var id = e.target.getAttribute("data-page");
         console.warn("click pe menu", id);
         showPage(id);
       }
@@ -48,3 +50,27 @@ function intiEvents() {
 
 showPage(activePage);
 intiEvents();
+
+function displaySkills(skills) {
+  var ul = document.querySelector("#skills ul");
+  skills.sort(function (a, b) {
+    return b.endorcements - a.endorcements;
+    // return b.endorcements - a.endorcements;
+  });
+  console.info(skills);
+  for (var i = 0; i < skills.length; i - i++) {
+    ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements}</li>`;
+  }
+}
+
+function loadSkills() {
+  fetch("skills.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (skills) {
+      console.warn("am primit ceva ori nu", skills);
+      displaySkills(skills);
+    });
+}
+loadSkills();
